@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+/* Add styles here! */
+:root {
+  --primary-green: hsl(160deg, 100%, 30%);
+  --secondary-gold-lighter: hsl(45deg, 100%, 50%);
+  --secondary-gold-darker: hsl(45deg, 100%, 40%);
+  --gray-black: hsl(0deg, 0%, 0%);
+  --gray-very-black: hsl(0deg, 0%, 10%);
+  --gray-dark: hsl(0deg, 0%, 30%);
+  --gray-medium: hsl(0deg, 0%, 40%);
+  --gray-light: hsl(0deg, 0%, 60%);
+  --gray-white: hsl(0deg, 0%, 100%);
+}
+
+.max-width-wrapper {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.intro-chunk {
+  padding-top: 4rem;
+  padding-bottom: 2.5rem;
+}
+.intro-chunk .title {
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+.intro-chunk p {
+  margin-bottom: .5rem;
+}
+
+main {
+  background-color: var(--gray-dark);
+  border-top: .2rem solid var(--gray-dark);
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  padding: 3rem 0;
+}
+.card {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: .2rem .5rem .5rem;
+  background-color: var(--gray-white);
+  border-bottom: .5rem solid var(--gray-light);
+}
+.indented-heading {
+  padding: .4rem .5rem;
+  margin-left: -1rem;
+  margin-bottom: .4rem;
+  background: var(--secondary-gold-lighter);
+  border-bottom: .5rem solid var(--secondary-gold-darker);
+}
+.card p {
+  margin-top: .4rem;
+}
