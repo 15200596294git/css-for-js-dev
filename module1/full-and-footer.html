@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>full screen and footer</title>
+  <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      margin: 0;
+      color: #fff;
+    }
+    .app {
+      min-height: 100%;
+      display: flex;
+      flex-flow: column;
+      background-color: black;
+    }
+    .header {
+      color: #fff;
+    }
+    .footer {
+      margin-top: auto;
+      border: 1px solid fuchsia;
+    }
+
+    .block {
+      margin: 20px;
+      border: 1px solid cadetblue;
+    }
+
+    .margin1 {}
+    .margin1 .margin1-p1{}
+    .margin1 .margin1-p2{}
+
+    .margin2 {
+      display: flex;
+    }
+    .margin2 .margin2-p1{
+      margin: 20px;
+    }
+    .margin2 .margin2-p2{
+      margin: 20px;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 30px;
+      font-style: italic;
+    }
+
+    .margin3 {}
+    .margin3-nested {}
+    .margin3-nested-p {}
+    .margin3-p {}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <p>I am a plain text</p>
+    </div>
+
+    <div class="block">
+      <p class="title">只有垂直margin会合并，水平margin不会合并</p>
+      <div class="margin1">
+        <p class="margin1-p1">我是文本1</p>
+        <p class="margin1-p2">我是文本2</p>
+      </div>
+      <div class="margin2">
+        <p class="margin2-p1">我是文本1</p>
+        <p class="margin2-p2">我是文本2</p>
+      </div>
+
+      <p class="title">嵌套margin生效</p>
+      <div class="margin3">
+        <div class="margin3-nested">
+          <p class="margin3-nested-p">我是文本</p>
+        </div>
+        <p class="margin3-p">我是文本</p>
+      </div>
+    </div>
+
+
+    <footer class="footer">I am a footer</footer>
+  </div>
+</body>
+</html>

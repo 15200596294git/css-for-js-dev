@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>absolute</title>
+  <style>
+    .tooltip {
+      /* Hide the tooltip by default */
+      display: none;
+      background: white;
+      border: 1px solid;
+    }
+
+    /*
+    Show the tooltip when hovering
+    over the wrapper:
+  */
+    .tooltip-trigger:hover .tooltip {
+      display: block;
+    }
+
+    .box {
+      width: 50px;
+      height: 50px;
+      border: 3px solid;
+      background: silver;
+      font-size: 2rem;
+      text-align: center;
+    }
+
+    .second.box {
+      margin-top: -30px;
+      margin-left: 20px;
+      background: pink;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="py-20px px-10px relative">
+    <div class="h-40px">我是正常文本</div>
+    <div class="absolute">我是absolute</div>
+    <div>我是普通文本</div>
+  </div>
+
+  <div class="relative w-400px h-400px bg-blue-300 rounded p-10px">
+    <div class="absolute inset-0 m-auto w-200px h-200px bg-pink-300"></div>
+  </div>
+
+  <p>Bubble Border</p>
+  <div class="w-200px h-150px border border-4px border-solid border-pink-300 relative ml-30px mt-30px">
+    <div class="w-30px h-30px rounded-full border-40x border-solid border-pink-300 bg-white absolute 
+    top--18px left-46px
+    "></div>
+    <div
+      class="absolute w-50px h-50px border-4px border-solid border-pink-300 left--20px top--20px rounded-full bg-white">
+    </div>
+    <div class="w-30px h-30px rounded-full border-40x border-solid border-pink-300 bg-white absolute 
+    top-46px left--20px
+    "></div>
+  </div>
+
+  <p>
+    The traditional Japanese tea ceremony centers on the preparation, serving, and drinking of
+    <a href="/" class="tooltip-trigger relative inline-block">
+      matcha
+      <span class="tooltip absolute top-100% min-w-150px py-10px px-16px">
+        A concentrated, powdered form of green tea
+      </span>
+    </a>
+    as hot tea.
+  </p>
+
+
+  <div class="first box">
+    A
+  </div>
+  <div class="second box">
+    B
+  </div>
+  <!-- 
+  <div class="m-20px">
+    <header class="relative z-2 h-20px bg-purple-300">header</header>
+    <main class="relative z-1">
+      <div class="absolute z-999 bg-red-300 top--20px border border-solid border-pink-300 rounded-4px p-20px">
+        我是tooltip
+      </div>
+    </main>
+  </div> -->
+
+  <div>
+    <div class="m-20px relative w-fit">
+      <div class="absolute w-40px h-40px bg-pink-300 left--10px top--10px"></div>
+      <div class="absolute w-40px h-40px bg-pink-300 right--10px bottom--10px"></div>
+      <div class="relative w-200px h-200px bg-purple-300">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="translate-x-10px">
+    <div class="w-400px h-400px bg-red-300 rounded-4px fixed inset-0 m-auto"></div>
+  </div> -->
+
+  <!-- 横向滚动 images -->
+  <div class="w-400px overflow-auto ws-nowrap border-2px border-solid border-red-300 rounded-4px">
+    <img class="w-100px h-100px bg-red-300" src="" alt="">
+    <img class="w-100px h-100px bg-red-300" src="" alt="">
+    <img class="w-100px h-100px bg-red-300" src="" alt="">
+    <img class="w-100px h-100px bg-red-300" src="" alt="">
+    <img class="w-100px h-100px bg-red-300" src="" alt="">
+  </div>
+
+  <!-- position 和 overflow hidden -->
+  <div class="w-200px h-200px border-2px border-solid overflow-scroll relative">
+    <div class="w-100px h-100px bg-pink-400 absolute top-24px left-140px"></div>
+  </div>
+
+  <!-- sticky -->
+  <div class="w-200px h-200px overflow-auto">
+    <div>
+      <div class="sticky top-0 border-2px text-center text-white bg-red-300">1月</div>
+      <div class="text-center text-white p-6px rounded-4px bg-green-300 my-10px">1</div>
+      <div class="text-center text-white p-6px rounded-4px bg-green-300 my-10px">1</div>
+      <div class="text-center text-white p-6px rounded-4px bg-green-300 my-10px">1</div>
+      <div class="text-center text-white p-6px rounded-4px bg-green-300 my-10px">1</div>
+      <div class="text-center text-white p-6px rounded-4px bg-green-300 my-10px">1</div>
+      <div class="text-center text-white p-6px rounded-4px bg-green-300 my-10px">1</div>
+      <div class="text-center text-white p-6px rounded-4px bg-green-300 my-10px">1</div>
+      <div class="text-center text-white p-6px rounded-4px bg-green-300 my-10px">1</div>
+    </div>
+
+    <div>
+      <div class="sticky top-0 border-2px text-center text-white bg-red-300">2月</div>
+      <div class="text-center text-white p-6px rounded-4px bg-green-300 my-10px">1</div>
+      <div class="text-center text-white p-6px rounded-4px bg-green-300 my-10px">1</div>
+      <div class="text-center text-white p-6px rounded-4px bg-green-300 my-10px">1</div>
+      <div class="text-center text-white p-6px rounded-4px bg-green-300 my-10px">1</div>
+      <div class="text-center text-white p-6px rounded-4px bg-green-300 my-10px">1</div>
+      <div class="text-center text-white p-6px rounded-4px bg-green-300 my-10px">1</div>
+      <div class="text-center text-white p-6px rounded-4px bg-green-300 my-10px">1</div>
+      <div class="text-center text-white p-6px rounded-4px bg-green-300 my-10px">1</div>
+    </div>
+  </div>
+
+  <div class="w-200px h-200px border-2px border-solid rounded-4px overflow-auto my-20px"> 
+    <div class="py-10px bg-purple-400 text-white text-center sticky top-0">header</div>
+    <p class="h-400px">Hello world!</p>
+  </div>
+
+  <div class="my-20px h-80px w-100px border-2px border-solid rounded-4px overflow-auto">
+    <!-- <div>
+    </div> -->
+    <div class="w-20px h-20px rounded-4px bg-pink-400 sticky top-0"></div>
+    <p>
+      This is a text.
+      This is a text.
+      This is a text.
+      This is a text.
+      This is a text.
+      This is a text.
+      This is a text.
+      This is a text.
+    </p>
+  </div>
+
+  <script src="../unoruntime/index.js"></script>
+</body>
+
+</html>

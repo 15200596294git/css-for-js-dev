@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>默认填充整个屏幕</title>
+  <style>
+    html, body {
+      height: 100%;
+    }
+    body {
+      margin: 0;
+    }
+    .wrap {
+      box-sizing: border-box;
+      border: 10px solid fuchsia;
+      min-height: 100%;
+      display: grid;
+      place-content: center;
+      background-color: black;
+    }
+    .text {
+      color: aliceblue;
+      font-weight: bold;
+      font-size: 24px;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <p class="text">Hello World</p>
+  </div>
+</body>
+</html>
