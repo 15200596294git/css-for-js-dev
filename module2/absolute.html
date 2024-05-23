@@ -35,6 +35,26 @@
       margin-left: 20px;
       background: pink;
     }
+
+    body {
+      padding-bottom: 340px;
+    }
+
+    .my-sticky {
+
+    }
+    .my-sticky ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .my-sticky ul li {
+      background-color: aqua;
+      color: #fff;
+      padding: 10px 12px;
+      margin: 10px 18px;
+
+    }
   </style>
 </head>
 
@@ -146,7 +166,7 @@
     </div>
   </div>
 
-  <div class="w-200px h-200px border-2px border-solid rounded-4px overflow-auto my-20px"> 
+  <div class="w-200px h-200px border-2px border-solid rounded-4px overflow-auto my-20px">
     <div class="py-10px bg-purple-400 text-white text-center sticky top-0">header</div>
     <p class="h-400px">Hello world!</p>
   </div>
@@ -166,6 +186,48 @@
       This is a text.
     </p>
   </div>
+
+  <p>负 marign</p>
+  <p>
+    父级元素根据子元素的元素高度来确定高度
+
+  </p>
+  <div class="bg-pink-300 w-200px">
+    <div class="bg-blue-300">
+      <div class="h-200px"></div>
+    </div>
+  </div>
+
+  <div class="bg-yellow-400">
+    <div class="w-200px h-200px bg-red-400"></div>
+  </div>
+
+  <div class="h-200px overflow-auto border-2px border-solid rounded-4px mt-40px my-sticky">
+    <ul>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li class="sticky bottom-0 top-0">这是我的排名</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+      <li>1</li>
+    </ul>
+  </div>
+
 
   <script src="../unoruntime/index.js"></script>
 </body>
