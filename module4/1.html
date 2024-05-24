@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex</title>
+    <style>
+
+    </style>
+  </head>
+  <body>
+    <ul class="list-none flex justify-evenly items-center <sm:flex-col">
+      <li>
+        <a href="">Home</a>
+      </li>
+      <li>
+        <a href="">Browse</a>
+      </li>
+      <li>
+        <a href="">Contact</a>
+      </li>
+    </ul>
+
+    <ul class="list-none flex justify-center items-baseline gap-8px">
+      <li class="self-center">Home</li>
+      <li class="text-28px">Browser</li>
+      <li>Contact</li>
+    </ul>
+
+    <section class="my-40px">
+      <ol
+        class="h-550px list-none p-20px border-2px border-solid rounded-8px w-400px flex flex-col justify-end gap-10px"
+      >
+        <li class="bg-blue-300 rounded-6px p-16px text-white self-start">
+          Can you get me a bing salad?
+        </li>
+        <li class="bg-gray-300 rounded-6px p-16px self-end">
+          Can you get me a bing salad?
+        </li>
+        <li class="bg-blue-300 rounded-6px p-16px text-white self-start">
+          Can you get me a bing salad?
+        </li>
+        <li class="bg-gray-300 rounded-6px p-16px self-end">
+          Can you get me a bing salad?
+        </li>
+        <li class="bg-blue-300 rounded-6px p-16px text-white self-start">
+          Can you get me a bing salad?
+        </li>
+        <li class="bg-gray-300 rounded-6px p-16px self-end">
+          Can you get me a bing salad?
+        </li>
+        <li class="bg-gray-300 rounded-6px p-16px self-end">
+          Can you get me a bing salad?
+        </li>
+      </ol>
+    </section>
+
+    <section class="my-40px w-200px overflow-auto">
+      <ol
+        class="list-none p-0 h-140px border-2px border-solid rounded-4px flex"
+      >
+        <li class="bg-pink-300">Hello World!</li>
+        <li class="bg-blue-300">Each item</li>
+        <li class="bg-purple-300">now contains</li>
+        <li class="bg-yellow-300">several words.</li>
+      </ol>
+    </section>
+
+    <section class="flex">
+      <nav class="p-16px border-2px border-solid rounded-2px flex-basis-220px flex-shrink-10000">
+        <h2>Navigation</h2>
+        <ul>
+          <li>Home</li>
+          <li>Shop</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <main class="p-16px border-2px border-solid rounded-2px flex-grow-1">
+        <h1>Welcome to ThingStore</h1>
+        <p>Please enjoy your time shopping!</p>
+      </main>
+    </section>
+
+    <script src="../unoruntime/index.js"></script>
+    <script>
+      window.__unocss = {
+        theme: {
+          breakpoints: {
+            sm: "300px",
+          },
+        },
+      };
+    </script>
+  </body>
+</html>
