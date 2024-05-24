@@ -1,95 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>flex</title>
-    <style>
 
-    </style>
-  </head>
-  <body>
-    <ul class="list-none flex justify-evenly items-center <sm:flex-col">
-      <li>
-        <a href="">Home</a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>flex</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <ul class="list-none flex justify-evenly items-center <sm:flex-col">
+    <li>
+      <a href="">Home</a>
+    </li>
+    <li>
+      <a href="">Browse</a>
+    </li>
+    <li>
+      <a href="">Contact</a>
+    </li>
+  </ul>
+
+  <ul class="list-none flex justify-center items-baseline gap-8px">
+    <li class="self-center">Home</li>
+    <li class="text-28px">Browser</li>
+    <li>Contact</li>
+  </ul>
+
+  <section class="my-40px">
+    <ol class="h-550px list-none p-20px border-2px border-solid rounded-8px w-400px flex flex-col justify-end gap-10px">
+      <li class="bg-blue-300 rounded-6px p-16px text-white self-start">
+        Can you get me a bing salad?
       </li>
-      <li>
-        <a href="">Browse</a>
+      <li class="bg-gray-300 rounded-6px p-16px self-end">
+        Can you get me a bing salad?
       </li>
-      <li>
-        <a href="">Contact</a>
+      <li class="bg-blue-300 rounded-6px p-16px text-white self-start">
+        Can you get me a bing salad?
       </li>
-    </ul>
+      <li class="bg-gray-300 rounded-6px p-16px self-end">
+        Can you get me a bing salad?
+      </li>
+      <li class="bg-blue-300 rounded-6px p-16px text-white self-start">
+        Can you get me a bing salad?
+      </li>
+      <li class="bg-gray-300 rounded-6px p-16px self-end">
+        Can you get me a bing salad?
+      </li>
+      <li class="bg-gray-300 rounded-6px p-16px self-end">
+        Can you get me a bing salad?
+      </li>
+    </ol>
+  </section>
 
-    <ul class="list-none flex justify-center items-baseline gap-8px">
-      <li class="self-center">Home</li>
-      <li class="text-28px">Browser</li>
-      <li>Contact</li>
-    </ul>
+  <section class="my-40px w-200px overflow-auto">
+    <ol class="list-none p-0 h-140px border-2px border-solid rounded-4px flex">
+      <li class="bg-pink-300">Hello World!</li>
+      <li class="bg-blue-300">Each item</li>
+      <li class="bg-purple-300">now contains</li>
+      <li class="bg-yellow-300">several words.</li>
+    </ol>
+  </section>
 
-    <section class="my-40px">
-      <ol
-        class="h-550px list-none p-20px border-2px border-solid rounded-8px w-400px flex flex-col justify-end gap-10px"
-      >
-        <li class="bg-blue-300 rounded-6px p-16px text-white self-start">
-          Can you get me a bing salad?
-        </li>
-        <li class="bg-gray-300 rounded-6px p-16px self-end">
-          Can you get me a bing salad?
-        </li>
-        <li class="bg-blue-300 rounded-6px p-16px text-white self-start">
-          Can you get me a bing salad?
-        </li>
-        <li class="bg-gray-300 rounded-6px p-16px self-end">
-          Can you get me a bing salad?
-        </li>
-        <li class="bg-blue-300 rounded-6px p-16px text-white self-start">
-          Can you get me a bing salad?
-        </li>
-        <li class="bg-gray-300 rounded-6px p-16px self-end">
-          Can you get me a bing salad?
-        </li>
-        <li class="bg-gray-300 rounded-6px p-16px self-end">
-          Can you get me a bing salad?
-        </li>
-      </ol>
-    </section>
+  <section class="flex">
+    <nav class="p-16px border-2px border-solid rounded-2px flex-basis-220px flex-shrink-10000">
+      <h2>Navigation</h2>
+      <ul>
+        <li>Home</li>
+        <li>Shop</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <main class="p-16px border-2px border-solid rounded-2px flex-grow-1">
+      <h1>Welcome to ThingStore</h1>
+      <p>Please enjoy your time shopping!</p>
+    </main>
+  </section>
 
-    <section class="my-40px w-200px overflow-auto">
-      <ol
-        class="list-none p-0 h-140px border-2px border-solid rounded-4px flex"
-      >
-        <li class="bg-pink-300">Hello World!</li>
-        <li class="bg-blue-300">Each item</li>
-        <li class="bg-purple-300">now contains</li>
-        <li class="bg-yellow-300">several words.</li>
-      </ol>
-    </section>
+  <section class="my-40px max-w-400px">
+    <div class="rounded-4px mx-20px p-10px shadow-[2px_2px_4px_#000] flex items-center justify-content">
+      <span class="inline-block w-40px h-40px shrink-0 self-start rounded-full bg-green-300"></span>
+      <span class="ml-14px">Thanks for participating in our survey!</span>
+    </div>
+  </section>
 
-    <section class="flex">
-      <nav class="p-16px border-2px border-solid rounded-2px flex-basis-220px flex-shrink-10000">
-        <h2>Navigation</h2>
-        <ul>
-          <li>Home</li>
-          <li>Shop</li>
-          <li>Contact</li>
-        </ul>
-      </nav>
-      <main class="p-16px border-2px border-solid rounded-2px flex-grow-1">
-        <h1>Welcome to ThingStore</h1>
-        <p>Please enjoy your time shopping!</p>
-      </main>
-    </section>
+  <section class="max-w-680px border-[2px_solid] rounded-4px  my-40px">
+    <ol class="list-none  p-20px  flex flex-wrap gap-10px shadow-[0_0_16px_4px_#bebebe] rounded-8px">
+      <li class="shadow-[0_0_16px_4px_#bebebe] flex-1 flex-col flex  rounded-8px overflow-hidden bg-white">
+        <div class="h-150px bg-red-300"></div>
+        <div class="p-14px h-140px">
+          <h2>Studh:Catnip is GOOD</h2>
+          <p>The number-crunching mousers have good news for us all: catnip is as good for us as it feels!</p>
+        </div>
+      </li>
+      <li class="shadow-[0_0_16px_4px_#bebebe] flex-1 flex-col flex  rounded-8px overflow-hidden bg-white">
+        <div class="h-150px bg-red-300"></div>
+        <div class="p-14px h-140px">
+          <h2>Studh:Catnip is GOOD</h2>
+          <p>The number-crunching mousers have good news for us all: catnip is as good for us as it feels!</p>
+        </div>
+      </li>
+      <li class="shadow-[0_0_16px_4px_#bebebe] flex-1 flex-col flex  rounded-8px overflow-hidden bg-white">
+        <div class="h-150px bg-red-300"></div>
+        <div class="p-14px h-140px">
+          <h2>Studh:Catnip is GOOD</h2>
+          <p>The number-crunching mousers have good news for us all: catnip is as good for us as it feels!</p>
+        </div>
+      </li>
+    </ol>
+  </section>
 
-    <script src="../unoruntime/index.js"></script>
-    <script>
-      window.__unocss = {
-        theme: {
-          breakpoints: {
-            sm: "300px",
-          },
+  <section class="mx-40px">
+    <ol class="p-10px list-none flex justify-center shadow-[0_0_16px_4px_#bebebe] rounded-4px h-265px">
+      <li class="bg-green-300 p-10px flex-1 max-w-150px">Sidebar</li>
+      <li class="bg-red-300 p-10px flex-basis-0 flex-grow-2 max-w-500px">Content</li>
+    </ol>
+  </section>
+
+  <section class="my-40px -mx-8px">
+    <!-- 640px 隐藏左边 -->
+    <!-- 640px之前不能缩小两边，那也就是说此时中间的块会比它的basis大的 -->
+    <!-- 两边限制宽度，640隐藏左边，然后先所见右边，到min-w时再缩减content -->
+    <!-- 两边120 - 150之间， -->
+
+    <!-- 三个元素 1、3不设置flex-basis,默认为auto，此时div为空，那么就为0；设置min-w-120px max-w-150px,此时元素只会在120-150之间变化 -->
+    <!-- 2元素设置，flex-basis为280px -->
+    <!-- 当容器为520px,1、3为最小宽度,中间为flex-basis,如果再缩小，每个元素都会按照比例缩小 -->
+    <!-- 那什么时候1、3才能增长呢？我们知道flex-grow是当容器有可用的额外空间时，给子元素增长 -->
+    <!-- 那也就是大于520的时候，就会有额外的空间，此时按照flex-basi和flex-grow进行分配 -->
+    <!-- flex-basis代表的元素本来的宽度，如果元素小于flex-basis所设置的宽度值，那么说明容器太小了，不会触发flex-grow -->
+    <!-- 此时增加容器到521，已经大于了三个item的最小宽度(min-w-120 flex-basis 280px) -->
+    <!-- 
+        那么就有额外的空间进行分配，1、3flex-basis为auto，由于时空的，所以为0，2flex-basis为280
+        此时基于flex-basis为项目分配额外空间，我们设置为523吧，好算一点，那么就是一人1px
+        1、3为0px
+        2为 flex-basis + 1 283px
+        由于1、3设置了min-w-120px,所以在flex-basis+分配空间小于120时，它不会有作用，而是把所有的空间都给到2
+        当可分配空间大于120时，也就是说需要给三个项目至少每个分配120，再加content的宽度，两边才会进行增长 120*3 + 280
+       -->
+
+    <!-- 
+        需求
+        当容器宽度大于 两个min-w和content的flex-basis时，同时增长，而两边增长到150便不再增长
+        所以需要设置flex-basis
+        640或者640以下，隐藏左边，640的时候三个都是增长的
+        然后是最右边缩小，
+        -->
+
+    <ol class="p-0px list-none flex shadow-[0_0_16px_4px_#bebebe] rounded-4px overflow-hidden h-465px">
+      <li class="bg-green-300 flex-basis-150px min-w-120px max-w-150px <md:hidden"></li>
+      <li class="bg-red-300 flex-basis-280px flex-grow-1"></li>
+      <li class="bg-yellow-300 flex-basis-150px min-w-120px max-w-150px flex-shrink-999999"></li>
+    </ol>
+  </section>
+
+  <div class="max-w-600px m-10px">
+    <div class="flex flex-wrap gap-16px">
+      <article class="rounded-8px overflow-hidden shadow-[0_0_16px_4px_#a8a8a8] flex-basis-290px flex-grow-1">
+        <img class="w-full" src="../imgs/dog1.jpg" alt="">
+        <section class="p-16px">
+          <h2>The One Weird Trick to get tasty dinner scraps</h2>
+          <p>Step one: Find the friendliest human at the dinner table. Step two: Give them sad pupper eyes. Step 3: Get
+            slid human food on the sly.</p>
+        </section>
+      </article>
+      <article class="rounded-8px overflow-hidden shadow-[0_0_16px_4px_#a8a8a8] flex-basis-290px flex-grow-1">
+        <img class="w-full" src="../imgs/dog1.jpg" alt="">
+        <section class="p-16px">
+          <h2>The One Weird Trick to get tasty dinner scraps</h2>
+          <p>Step one: Find the friendliest human at the dinner table. Step two: Give them sad pupper eyes. Step 3: Get
+            slid human food on the sly.</p>
+        </section>
+      </article>
+      <article class="rounded-8px overflow-hidden shadow-[0_0_16px_4px_#a8a8a8] flex-basis-290px flex-grow-1">
+        <img class="w-full" src="../imgs/dog1.jpg" alt="">
+        <section class="p-16px">
+          <h2>The One Weird Trick to get tasty dinner scraps</h2>
+          <p>Step one: Find the friendliest human at the dinner table. Step two: Give them sad pupper eyes. Step 3: Get
+            slid human food on the sly.</p>
+        </section>
+      </article>
+    </div>
+  </div>
+
+  <div class="mx-16px my-40px max-w-600px">
+    <div class="flex flex-wrap gap-16px justify-center">
+      <article class="flex-basis-180px bg-red-300 rounded-8px h-250px"></article>
+      <article class="flex-basis-180px bg-yellow-300 rounded-8px h-250px"></article>
+      <article class="flex-basis-180px bg-blue-300 rounded-8px h-250px"></article>
+    </div>
+  </div>
+
+  <div class="mx-16px my-40px max-w-600px p-16px rounded-4px b-2px b-solid">
+    <article class="flex items-center gap-8px">
+      <p class="mr-auto">wsjg</p>
+      <input type="text" placeholder="Please Enter" class="">
+      <button>Search</button>
+
+    </article>
+  </div>
+
+  <script src="../unoruntime/index.js"></script>
+  <script>
+    window.__unocss = {
+      shortcuts: {
+        'j-shadow-gray': "shadow-[0_0_16px_4px_#bebebe]"
+      },
+      theme: {
+        breakpoints: {
+          sm: "300px",
         },
-      };
-    </script>
-  </body>
+      },
+    };
+  </script>
+</body>
+
 </html>
