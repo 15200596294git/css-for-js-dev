@@ -1,54 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reponsive</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reponsive</title>
-</head>
+  <body>
+    <h1>Hello World!</h1>
 
-<body>
-  <h1>Hello World!</h1>
-
-  <div class="h-400px border-2px border-solid rounded-4px p-4px flex">
-    <!-- <div></div>
+    <!-- flex容器定义了高度，主轴为col，此时item会根据容器高度shrink -->
+    <!-- 如果flex容器没有定义高度，flex容器的父元素定义了高度，就会造成item超出flex容器高度的假象 -->
+    <!-- 实际是没有超出flex容器，flex容器的高度也会跟随增长 -->
+    <div class="h-400px border-2px border-solid rounded-4px p-4px flex my-40px">
+      <!-- <div></div>
     <div></div> -->
 
-    <div class="flex-1 flex flex-col">
-      <p>wsbt</p>
-      <div class="flex-1 flex">
-        <div class="flex-1 overflow-auto">
-          <ul>
-            <li class="h-50px">1</li>
-            <li class="h-50px">1</li>
-            <li class="h-50px">1</li>
-            <li class="h-50px">1</li>
-            <li class="h-50px">1</li>
-            <li class="h-50px">1</li>
-            <li class="h-50px">1</li>
-            <li class="h-50px">1</li>
-            <li class="h-50px">1</li>
-            <li class="h-50px">1</li>
-          </ul>
+      <div class="flex-1 flex flex-col">
+        <p>wsbt</p>
+        <div class="flex">
+          <div class="flex-1">
+            <ul>
+              <li class="h-50px">1</li>
+              <li class="h-50px">1</li>
+              <li class="h-50px">1</li>
+              <li class="h-50px">1</li>
+              <li class="h-50px">1</li>
+              <li class="h-50px">1</li>
+              <li class="h-50px">1</li>
+              <li class="h-50px">1</li>
+              <li class="h-50px">1</li>
+              <li class="h-50px">1</li>
+            </ul>
+          </div>
+          <div class="w-200px bg-red-300"></div>
         </div>
-        <div class="w-200px bg-red-300"></div>
       </div>
     </div>
-  </div>
 
-  <script src="../unoruntime/index.js"></script>
-  <script>
-    window.__unocss = {
-      shortcuts: {
-        "j-shadow-gray": "shadow-[0_0_16px_4px_#bebebe]",
-      },
-      theme: {
-        breakpoints: {
-          sm: "300px",
+    <!-- 容器设置高度，如果内部高度超出，overflow: auto 出现滚动条 -->
+    <!-- flex flex容器设置高度，col，item根据自身高度，可以超出 -->
+    <!-- 如果item设置overflow: auto, 相当于给item定义了max-width，然后超出max-width 出现滚动条 -->
+    <!-- 这个max-width应该是动态的 -->
+    <!-- 因为默认有shrink: 1, 所以超出内容会自动缩放 -->
+    <!--  -->
+    <div class="h-400px border-2px border-solid rounded-4px p-4px flex">
+      <!-- <div></div>
+    <div></div> -->
+
+      <div class="flex-1 flex flex-col">
+        <p>wsbt</p>
+        <div class="flex">
+          <div class="flex-1">
+            <ul>
+              <li class="h-50px">1</li>
+              <li class="h-50px">1</li>
+              <li class="h-50px">1</li>
+              <li class="h-50px">1</li>
+              <li class="h-50px">1</li>
+              <li class="h-50px">1</li>
+              <li class="h-50px">1</li>
+              <li class="h-50px">1</li>
+              <li class="h-50px">1</li>
+              <li class="h-50px">1</li>
+            </ul>
+          </div>
+          <div class="w-200px bg-red-300"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../unoruntime/index.js"></script>
+    <script>
+      window.__unocss = {
+        shortcuts: {
+          "j-shadow-gray": "shadow-[0_0_16px_4px_#bebebe]",
         },
-      },
-    };
-  </script>
-</body>
-
+        theme: {
+          breakpoints: {
+            sm: "300px",
+          },
+        },
+      };
+    </script>
+  </body>
 </html>
