@@ -11,9 +11,56 @@
 
   <div id="app">
     
-    <div class="mx-40px grid grid-cols-[repeat(7,40px)] gap-12px">
+    <div class="mx-40px grid grid-cols-[repeat(7,40px)] gap-12px justify-center">
       <div class="h-40px rounded-4px b b-solid flex items-center justify-center" v-for="(d, i) in days" :key="i">
         {{i + 1}}
+      </div>
+    </div>
+
+    <div class="my-40px">
+      <div class="w-200px mx-auto grid">
+        <div>this</div>
+        <div>this is</div>
+        <div>hello world!</div>
+      </div>
+
+      <div class="my-16px w-400px mx-auto grid grid-cols-[100px_100px]">
+        <div>this</div>
+        <div>this is</div>
+        <div>hello world!</div>
+      </div>
+
+      <!--  -->
+      <div class="my-16px w-400px mx-auto grid grid-justify-items-center">
+        <div class="b-solid b">this</div>
+        <div class="b-solid b">this is</div>
+        <div class="b-solid b">hello world!</div>
+      </div>
+
+      <div class="my-16px w-400px mx-auto grid grid-justify-items-center h-400px">
+        <div class="b-solid b">this</div>
+        <div class="b-solid b">this is</div>
+        <div class="b-solid b">hello world!</div>
+      </div>
+    </div>
+
+    <div >
+      <h1>exercise</h1>
+      <div class="w-400px h-200px bg-black grid grid-rows-[repeat(3,1fr)]">
+        <div class="w-50% h-full bg-red-2 grid-justify-self-end"></div>
+        <div class="w-50% h-full bg-blue-2 grid-justify-self-center"></div>
+        <div class="w-50% h-full bg-yellow-2 grid-justify-self-start"></div>
+      </div>
+
+      <div class="my-20px w-400px h-320px grid grid-rows-[repeat(3,1fr) grid-cols-[repeat(2,1fr)] 
+        
+      bg-black gap-6px">
+        <div class="box one bg-pink-3 w-25% justify-self-end"></div>
+        <div class="box two bg-pink-3 w-75%"></div>
+        <div class="box three bg-purple-3 w-50% justify-self-end"></div>
+        <div class="box four bg-purple-3 w-50%"></div>
+        <div class="box five bg-pink-3 w-75% justify-self-end"></div>
+        <div class="box six bg-pink-3 w-25%"></div>
       </div>
     </div>
   </div>
