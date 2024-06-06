@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>temp grid</title>
+</head>
+
+<body>
+
+  <div id="app">
+    
+    <div class="mx-40px grid grid-cols-[repeat(7,40px)] gap-12px">
+      <div class="h-40px rounded-4px b b-solid flex items-center justify-center" v-for="(d, i) in days" :key="i">
+        {{i + 1}}
+      </div>
+    </div>
+  </div>
+
+  <script src="../unoruntime/index.js"></script>
+  <script src="../vue.global.js"></script>
+
+  <script>
+    const { createApp } = Vue
+
+    createApp({
+      data() {
+        return {
+          days: new Array(31).fill(true)
+        }
+      }
+    }).mount('#app')
+  </script>
+</body>
+
+</html>
