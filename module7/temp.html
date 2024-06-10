@@ -5,6 +5,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>temp grid</title>
+
+  <style>
+    .my-grid1 {
+      grid-template-areas: 
+      "aside header"
+      "aside main"
+      ;
+    }
+    .my-grid1 aside{
+      grid-area: aside;
+    }
+    .my-grid1 header{
+      grid-area: header;
+    }
+    .my-grid1 main{
+      grid-area: main;
+    }
+
+    .my-grid2 {
+      grid-template-areas: 
+      "header header header"
+      "aside1 main aside2"
+      "footer footer footer"
+      ;
+    }
+    .my-grid2 .header{
+      grid-area: header;
+    }
+    .my-grid2 .aside1{
+      grid-area: aside1;
+    }
+    .my-grid2 .main{
+      grid-area: main;
+    }
+    .my-grid2 .aside2{
+      grid-area: aside2;
+    }
+    .my-grid2 .footer{
+      grid-area: footer;
+    }
+  </style>
 </head>
 
 <body>
@@ -44,7 +85,7 @@
       </div>
     </div>
 
-    <div >
+    <div>
       <h1>exercise</h1>
       <div class="w-400px h-200px bg-black grid grid-rows-[repeat(3,1fr)]">
         <div class="w-50% h-full bg-red-2 grid-justify-self-end"></div>
@@ -63,6 +104,22 @@
         <div class="box six bg-pink-3 w-25%"></div>
       </div>
     </div>
+
+    <div class="my-40px h-400px w-480px grid grid-cols-2 my-grid1">
+      <aside class="bg-red-3">aside</aside>
+      <header class="bg-yellow-3">header</header>
+      <main class="bg-pink-3">main</main>
+    </div>
+
+    <div class="my-40px h-400px w-480px grid grid-cols-[100px_1fr_100px] grid-rows-[60px_1fr_60px] my-grid2">
+      <header class="header bg-yellow-1"></header>
+
+        <aside class="aside1 bg-green-1"></aside>
+        <main class="main bg-blue-1"></main>
+        <aside class="aside2 bg-red-1"></aside>
+      <footer class="footer bg-pink-1"></footer>
+    </div>
+
   </div>
 
   <script src="../unoruntime/index.js"></script>
