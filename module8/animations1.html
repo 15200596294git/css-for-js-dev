@@ -12,20 +12,6 @@
         background: hsl(0deg 0% 0% / 0.75);
       }
 
-      .dialog-content {
-        width: 600px;
-        max-width: 100%;
-        height: 400px;
-        background: white;
-        border-radius: 6px;
-      }
-
-      .close-btn {
-        padding: 16px;
-        background: transparent;
-        border: none;
-        font-weight: bold;
-      }
     </style>
   </head>
   <body>
@@ -37,16 +23,43 @@
         transform-skew-x-50deg
         ">jg</div> -->
 
-      <div class="w-200px h-200px bg-red-3 translate-x-50px rotate-45deg">
+      <div class="w-200px h-200px bg-red-3">
         jg
       </div>
     </div>
 
-    <div class="dialog-wrapper">
-      <div class="dialog-content">
-        <button class="close-btn">Close</button>
-      </div>
+    <button class="py-6px px-12px transition-transform-250 hover:translate-x-20px ease-out delay-500ms">wsjg</button>
+
+    <p>dom 抖动</p>
+    <div class="flex gap-16px">
+      <button class="p-0 w-100px h-100px rounded-full b-none hover:translate-y--40px transition-transform-500 ease-out bg-red-3">wsjg</button>
+
+      <button class="p-0 b-none rounded-full bg-transparent group">
+        <span class="bg-red-3 rounded-full w-100px h-100px inline-flex items-center justify-center  transition-transform-500 ease-out group-hover:translate-y--40px">wsjg</span>
+      </button>
     </div>
+
+
+    <div class="my-40px w-440px gap-16px p-16px grid grid-cols-[repeat(2,1fr)] grid-auto-rows-[200px] bg-pink-3">
+
+      <div class="bg-red-3 rounded-4px overflow-hidden  group flex items-center justify-center shadow-md">
+        <img class="w-full h-full hover:scale-[1.2] transition-transform-500 ease-out object-cover" src="../imgs/dog3.jpg" alt="">
+      </div>
+
+      <div class="bg-red-3 rounded-4px overflow-hidden  group flex items-center justify-center shadow-md">
+        <img class="w-full h-full hover:scale-[1.2] transition-transform-500 ease-out object-cover" src="../imgs/dog3.jpg" alt="">
+      </div>
+
+      <div class="bg-red-3 rounded-4px overflow-hidden  group flex items-center justify-center shadow-md">
+        <img class="w-full h-full hover:scale-[1.2] transition-transform-500 ease-out object-cover" src="../imgs/dog3.jpg" alt="">
+      </div>
+
+      <div class="bg-red-3 rounded-4px overflow-hidden  group flex items-center justify-center shadow-md">
+        <img class="w-full h-full hover:scale-[1.2] transition-transform-500 ease-out object-cover" src="../imgs/dog3.jpg" alt="">
+      </div>
+      
+    </div>
+    
 
     <script src="../unoruntime/index.js"></script>
   </body>
