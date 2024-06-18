@@ -12,6 +12,76 @@
         background: hsl(0deg 0% 0% / 0.75);
       }
 
+
+      @keyframes slide-in {
+        0% {
+          transform: rotate(0turn);
+        }
+        50% {
+          transform: rotate(0turn) translate(40px);
+        }
+        100% {
+          /* transform: rotate(1turn) translate(40px); */
+          transform: translate(-40px);
+        }
+      }
+      .box {
+        animation: slide-in 500ms linear;
+        /* animation-iteration-count: 3; */
+      }
+
+      @keyframes grow-and-shrink {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.5);
+        }
+      }
+
+      .breath {
+        /* will-change: transform; */
+        animation: grow-and-shrink 2000ms ease-in-out infinite;
+        animation-direction: alternate-reverse;
+      }
+
+      @keyframes fade-out {
+        from {
+          transform: translateX(-100%);
+          opacity: 1;
+        }
+        to {
+          transform: translateX(0%);
+          opacity: 0;
+        }
+      }
+
+      .fade-out {
+        animation: fade-out 1500ms ease-in;
+        animation-delay: 500ms;
+        animation-fill-mode: both;
+        animation-play-state: paused;
+      }
+
+      @keyframes brandish {
+        /* from {
+          transform: rotate(0turn);
+        }
+        to {
+          transform: rotate(1turn);
+        } */
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(40deg);
+        }
+      }
+      .hand {
+        transform-origin: 80% 80%;
+        animation: brandish 500ms infinite ease-in-out alternate forwards;
+        /* animation: brandish 1s linear; */
+      }
     </style>
   </head>
   <body>
@@ -57,7 +127,23 @@
       <div class="bg-red-3 rounded-4px overflow-hidden  group flex items-center justify-center shadow-md">
         <img class="w-full h-full hover:scale-[1.2] transition-transform-500 ease-out object-cover" src="../imgs/dog3.jpg" alt="">
       </div>
-      
+    </div>
+
+    <div class="box w-100px h-100px bg-pink-3">
+      leihou
+    </div>
+
+    <div class="my-40px flex flex-col items-center justify-center">
+
+      <div class="breath  w-100px h-100px bg-purple-3">雷猴</div>
+    </div>
+
+    <div class="my-40px flex justify-center">
+      <div class="fade-out  w-100px h-100px bg-purple-3"></div>
+    </div>
+
+    <div class="my-40px flex justify-center">
+      <span class="hand text-34px">👋</span> 
     </div>
     
 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>页面加载后底部滑出帮助按钮</title>
+  <style>
+
+    @keyframes slide-in {
+      0% {
+        transform: translateY(calc(100% + 32px));
+      }
+      100% {
+        transform: translateY(0%);
+      }
+    }
+    .slide-in {
+      animation: slide-in 500ms;
+
+    }
+  </style>
+</head>
+<body>
+  
+  <button class="b-none w-50px h-50px bg-pink rounded-full text-white cursor-pointer
+  fixed right-32px bottom-32px slide-in
+  ">
+    Help
+  </button>
+
+
+
+  <script src="../unoruntime/index.js"></script>
+</body>
+</html>
